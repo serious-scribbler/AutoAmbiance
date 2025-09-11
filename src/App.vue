@@ -9,7 +9,7 @@ const { stream, start, stop } = useDisplayMedia();
 const output = ref("");
 
 const error = ref<string|undefined>();
-const interpreter = usePipeline("image-to-text", undefined, { dtype: 'q4' });
+const interpreter = usePipeline("image-to-text");
 const videoElem = useTemplateRef("video");
 
 watchEffect(() => {
