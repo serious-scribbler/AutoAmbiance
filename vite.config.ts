@@ -17,6 +17,7 @@ export default defineConfig({
     },
   },
   server: {
+    origin: "*",
     cors: true
   },
   preview: {
